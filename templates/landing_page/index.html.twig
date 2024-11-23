@@ -13,6 +13,7 @@
         .content {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: calc(100vh - 260px);
         }
@@ -31,6 +32,13 @@
             font-size: 1em;
         }
 
+        .link {
+            margin-top: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
     <div class="content">
         <div class="container">
@@ -44,10 +52,11 @@
             </div>
             <p id="fibResult"></p>
         </div>
+        <div class="link">
+            <a href="/content-page">Content</a>
+        </div>
     </div>
-    <div>
-        <a href="/content-page">Content</a>
-    </div>
+
 
     <script>
         function calculateFibonacci() {
