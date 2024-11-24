@@ -28,12 +28,32 @@
             width: 100%;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
+        .navLinks {
+            margin-top: 10px;
+        }
+
+        .navLinks a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navLinks a:hover {
+            color: #00bcd4;
+        }
     </style>
 </head>
 <body>
 <header>
     <nav>
         <h1>Symfony App</h1>
+        <div class="navLinks">
+        <a href="/">Home</a>
+        <a href="/content-page">Content</a>
+        <a href="/about">About</a>
+        </div>
     </nav>
 </header>
 

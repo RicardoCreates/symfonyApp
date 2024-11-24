@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About Page{% endblock %}
+
+{% block body %}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 260px);
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 5px;
+            font-size: 1em;
+        }
+
+    </style>
+    <div class="content">
+        <div class="container">
+            <h1>Welcome to the About Page</h1>
+            <p>Find more here!</p>
+        </div>
+    </div>
+
+{% endblock %}
